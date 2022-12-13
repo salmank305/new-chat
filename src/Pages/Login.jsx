@@ -22,13 +22,13 @@ const Login = () => {
   return (
     <div className="formContainer">
       <div className="formWrapper">
-        <span className="logo">Welcome to Arrow Chat App</span>
+        <span className="logo">Welcome to <span style={{color: "red" ,fontSize:"35px"}}>C</span>hatNova App</span>
         <span className="title">Login</span>
         <form onSubmit={handleSubmit}>
-          <input type="email" placeholder="email" />
-          <input type="password" placeholder="password" />
+          <input type="email" placeholder=" Enter Email" />
+          <input type="password" placeholder="Enter Password" />
           <button>Sign in</button>
-          {err && <span>Something went wrong</span>}
+          {err && <span> Please enter valid email id & password</span>}
         </form>
         <p>You don't have an account? <Link to="/register">Register</Link></p>
       </div>
