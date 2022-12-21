@@ -7,13 +7,15 @@ const NavBar = () => {
   const {currentUser}=useContext(AuthContext)
   return (
     <div className='navbar'>
-      <span className='logo'>Arrow Chat</span>
+        {/* <span className="logo">Welcome to <span style={{color: "red" ,fontSize:"35px"}}>C</span>hatNova App</span> */}
+      <span className='logo'>ChatNova</span>
       <div className='user'><img src={currentUser.photoURL} alt=''/>
       <span>{currentUser.displayName}</span>
-      <button  onClick={()=>signOut(auth)}>logout</button>
+      <button  onClick={()=>signOut(auth)}>Logout</button>
       </div>
     </div>
   )
 }
 
 export default NavBar
+{/* <span style={{color: "red" ,fontSize:"35px"}}>C</span>hatNova</span> */}

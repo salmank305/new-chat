@@ -65,9 +65,9 @@ const Register = () => {
         <span className="logo"><span style={{color: "red" ,fontSize:"35px"}}>C</span>hatNova</span>
         <span className="title">Register</span>
         <form onSubmit={handleSubmit}>
-          <input required type="text" placeholder="display name" />
-          <input required type="email" placeholder="email" />
-          <input required type="password" placeholder="password" />
+          <input required type="text" placeholder="Display name" />
+          <input required type="email" placeholder="Email Id" />
+          <input required type="password" placeholder="Password" />
           <input required style={{ display: "none" }} type="file" id="file" />
           <label htmlFor="file">
             <img src={Add} alt="" />

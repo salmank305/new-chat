@@ -26,7 +26,7 @@ const Message = ({ message }) => {
           }
           alt=""
         />
-        <span>{new Date().toLocaleTimeString()}</span>
+        <span>{data}</span>
       </div>
       <div className="messageContent">
         <p>{message.text}</p>
